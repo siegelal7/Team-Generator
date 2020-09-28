@@ -32,7 +32,7 @@ function determineNextRoll() {
       {
         type: "list",
         message: questions[7],
-        name: "position",
+        name: "role",
         choices: ["Team Manager", "Engineer", "Intern", "No more members"],
       },
     ])
@@ -40,12 +40,17 @@ function determineNextRoll() {
       //   console.log(data.name);
       //   render(data);
 
-      if (data.position === "Team Manager") {
+      if (data.role === "Team Manager") {
         getInfoManager();
-      } else if (data.position === "Engineer") {
+        // determineNextRoll();
+      } else if (data.role === "Engineer") {
         getInfoEngineer();
-      } else {
+        // determineNextRoll();
+      } else if (data.role === "Intern") {
         getInfoIntern();
+        // determineNextRoll();
+      } else {
+        render(team);
       }
     })
     .catch((err) => {
@@ -101,6 +106,7 @@ function getInfoManager() {
       //   render(data);
       team.push(data);
       console.log(team);
+      determineNextRoll();
     })
     .catch((err) => {
       console.log(err);
@@ -137,6 +143,7 @@ function getInfoEngineer() {
       //   console.log(data.name);
       team.push(data);
       console.log(team);
+      determineNextRoll();
     })
     .catch((err) => {
       console.log(err);
@@ -171,6 +178,7 @@ function getInfoIntern() {
       //   console.log(data.name);
       team.push(data);
       console.log(team);
+      determineNextRoll();
     })
     .catch((err) => {
       console.log(err);
