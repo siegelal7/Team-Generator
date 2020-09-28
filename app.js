@@ -51,7 +51,11 @@ function determineNextRoll() {
         getInfoIntern();
         // determineNextRoll();
       } else {
-        render(team);
+        const renderTeam = render(team);
+        fs.writeFile(outputPath, renderTeam, function (err) {
+          if (err) throw err;
+          console.log("success!!");
+        });
       }
     })
     .catch((err) => {
@@ -106,9 +110,9 @@ function getInfoManager() {
       //   console.log(data.name);
       //   render(data);
       const person = new Manager(data.name, data.id, data.email, data.office);
-      console.log(person);
+      // console.log(person);
       team.push(person);
-      console.log(team);
+      // console.log(team);
       determineNextRoll();
     })
     .catch((err) => {
