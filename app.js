@@ -127,7 +127,7 @@ function getInfoEngineer() {
       //   console.log(data.name);
       const person = new Engineer(data.name, data.id, data.email, data.github);
       team.push(person);
-      console.log(team);
+      // console.log(team);
       determineNextRoll();
     })
     .catch((err) => {
@@ -163,7 +163,7 @@ function getInfoIntern() {
       //   console.log(data.name);
       const person = new Intern(data.name, data.id, data.email, data.school);
       team.push(person);
-      console.log(team);
+      // console.log(team);
       determineNextRoll();
     })
     .catch((err) => {
