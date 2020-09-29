@@ -1,32 +1,42 @@
 <!DOCTYPE html>
 <html lang="en">
-
-<head>
+  <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
     <title>My Team</title>
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
-        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
-    <link rel="stylesheet" href="style.css">
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+      integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="style.css" />
     <script src="https://kit.fontawesome.com/c502137733.js"></script>
-</head>
+  </head>
 
-<body>
-    <div class="container-fluid">
-        <div class="row">
-            <div class="col-12 jumbotron mb-3 team-heading">
-                <h1 class="text-center">My Team</h1>
-            </div>
-        </div>
-    </div>
+  <body
+    style="
+      background-image: url('http://getwallpapers.com/wallpaper/full/3/8/b/465259.jpg');
+    "
+  >
+    <nav
+      class="navbar navbar-light bg-light"
+      style="
+        height: 15vh;
+        background: #cceeff !important;
+        justify-content: center;
+        margin-bottom: 7%;
+      "
+    >
+      <span class="navbar-text"><h2 style="color: black">My Team</h2> </span>
+    </nav>
     <div class="container">
-        <div class="row">
-            <div class="team-area col-12 d-flex justify-content-center">
-                {{ team }}
-            </div>
+      <div class="row">
+        <div class="team-area col-12 d-flex justify-content-center">
+          {{ team }}
         </div>
+      </div>
     </div>
-</body>
-
+  </body>
 </html>
