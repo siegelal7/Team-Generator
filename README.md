@@ -3,6 +3,7 @@
 ## Description
 
 A simple command line interface to generate a webpage for your development team.
+See Walkthrough here: https://drive.google.com/file/d/1My5nj3K2b54VedH9vRteR7TBml3OL_mP/view
 
 ## Table of contents
 
